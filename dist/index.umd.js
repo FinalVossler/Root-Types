@@ -1,0 +1,2 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t(require("react")):"function"==typeof define&&define.amd?define(["react"],t):(e||self).ccmbutton=t(e.react)}(this,function(e){function t(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var n=/*#__PURE__*/t(e);return function(e){return n.default.createElement("button",null,e.label)}});
+//# sourceMappingURL=index.umd.js.map
