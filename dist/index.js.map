@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/index.tsx"],"sourcesContent":["const capitalize = (toCapitalize: string): string => {\n  return toCapitalize.charAt(0).toUpperCase() + toCapitalize.slice(1);\n};\n\nexport default capitalize;\n"],"names":["toCapitalize","charAt","toUpperCase","slice"],"mappings":"eAAmB,SAACA,GAClB,OAAOA,EAAaC,OAAO,GAAGC,cAAgBF,EAAaG,MAAM,EACnE"}

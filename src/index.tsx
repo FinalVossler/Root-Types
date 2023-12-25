@@ -1,10 +1,5 @@
-import React from "react";
-
-interface IButton {
-  label?: string;
-}
-const Button = (props: IButton) => {
-  return <button>{props.label}</button>;
+const capitalize = (toCapitalize: string): string => {
+  return toCapitalize.charAt(0).toUpperCase() + toCapitalize.slice(1);
 };
 
-export default Button;
+export default capitalize;

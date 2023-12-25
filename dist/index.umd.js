@@ -1,2 +1,2 @@
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t(require("react")):"function"==typeof define&&define.amd?define(["react"],t):(e||self).ccmbutton=t(e.react)}(this,function(e){function t(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var n=/*#__PURE__*/t(e);return function(e){return n.default.createElement("button",null,e.label)}});
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=function(e){return e.charAt(0).toUpperCase()+e.slice(1)}:"function"==typeof define&&define.amd?define(function(){return function(e){return e.charAt(0).toUpperCase()+e.slice(1)}}):(e||self).nodemicrobundle=function(e){return e.charAt(0).toUpperCase()+e.slice(1)}}(this);
 //# sourceMappingURL=index.umd.js.map
