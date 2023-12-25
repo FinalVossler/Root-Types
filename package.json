@@ -17,9 +17,18 @@
     "build": "npm run clean && microbundle --format umd --jsx React.createElement",
     "watch": "npm run clean && microbundle watch --no-compress --format umd --jsx React.createElement",
     "dev": "npm run watch",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.6",
+    "@storybook/addon-interactions": "^7.6.6",
+    "@storybook/addon-links": "^7.6.6",
+    "@storybook/blocks": "^7.6.6",
+    "@storybook/react": "^7.6.6",
+    "@storybook/react-webpack5": "^7.6.6",
+    "@storybook/test": "^7.6.6",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",
@@ -28,6 +37,9 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "microbundle": "^0.14.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.6",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   },
@@ -41,5 +53,6 @@
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.ts"
     ]
-  }
+  },
+  "dependencies": {}
 }
