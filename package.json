@@ -1,6 +1,6 @@
 {
   "name": "roottypes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "keywords": [],
   "author": "Hamza Khalifa",
@@ -17,7 +17,8 @@
     "build": "npm run clean && microbundle",
     "watch": "npm run clean && microbundle watch --no-compress",
     "dev": "npm run watch",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "deploy": "npm run build && git add . && git commit -m \"$MESSAGE\" && git push origin HEAD && npm publish"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
