@@ -31,7 +31,7 @@ export interface IWebsiteConfigurationReadDto {
   withRegistration?: boolean;
   withTaskManagement?: boolean;
   theme: ITheme;
-  tabIcon: IFileReadDto | string;
+  tabIcon?: IFileReadDto | string;
   logo1?: IFileReadDto | string;
   logo2?: IFileReadDto | string;
 
