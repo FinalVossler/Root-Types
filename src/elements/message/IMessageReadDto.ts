@@ -24,3 +24,17 @@ export interface IMessageReadDto {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface IPopulatedMessageReadDto {
+  _id: string;
+  from: IUserReadDto;
+  to: IUserReadDto[];
+  message: string;
+  read: IUserReadDto[];
+  readAt?: string[];
+  files: IFileReadDto[];
+  totalUnreadMessages?: number;
+  reactions?: IReactionReadDto[];
+  createdAt: string;
+  updatedAt: string;
+}
