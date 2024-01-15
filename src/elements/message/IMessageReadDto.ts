@@ -18,7 +18,7 @@ export interface IMessageReadDto {
   message: string;
   read: string[];
   readAt?: string[];
-  files: IFileReadDto[];
+  files: (IFileReadDto | string)[];
   totalUnreadMessages?: number;
   reactions?: IReactionReadDto[];
   createdAt: string;
