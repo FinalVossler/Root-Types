@@ -1,4 +1,4 @@
-import { IFileReadDto } from "../file/IFileReadDto";
+import { IFileCommand } from "../file/IFileCommand";
 import { ITheme } from "./IWebsiteConfigurationReadDto";
 
 export interface IWebsiteConfigurationUpdateCommand {
@@ -12,8 +12,8 @@ export interface IWebsiteConfigurationUpdateCommand {
   withRegistration: boolean;
   withTaskManagement: boolean;
   theme: ITheme;
-  tabIcon?: IFileReadDto;
-  logo1?: IFileReadDto;
-  logo2?: IFileReadDto;
+  tabIcon?: IFileCommand;
+  logo1?: IFileCommand;
+  logo2?: IFileCommand;
   language: string;
 }
