@@ -1,4 +1,4 @@
-export interface iMicroFrontendUpdateCommand {
+export interface IMicroFrontendUpdateCommand {
   _id: string;
   name: string;
   remoteEntry: string;
