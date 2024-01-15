@@ -9,7 +9,7 @@ export interface INotificationReadDto {
   _id: string;
   text: ITranslatedText[];
   link: string;
-  image: IFileReadDto;
+  image?: IFileReadDto;
   to: string[];
   clickedBy: string[];
 
