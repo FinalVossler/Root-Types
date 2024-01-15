@@ -11,7 +11,7 @@ export enum ReactionEnum {
 
 export interface IReactionReadDto {
   _id: string;
-  user: IUserReadDto;
+  user: IUserReadDto | string;
   reaction: ReactionEnum;
 
   createdAt: string;
