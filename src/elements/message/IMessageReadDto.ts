@@ -20,7 +20,7 @@ export interface IMessageReadDto {
   readAt?: string[];
   files: (IFileReadDto | string)[];
   totalUnreadMessages?: number;
-  reactions?: IReactionReadDto[];
+  reactions?: (IReactionReadDto | string)[];
   createdAt: string;
   updatedAt: string;
 }
