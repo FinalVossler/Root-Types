@@ -12,7 +12,7 @@ export enum StaticPermissionEnum {
 
 export interface IEntityPermissionReadDto {
   _id: string;
-  model: IModelReadDto;
+  model: IModelReadDto | string;
   permissions: StaticPermissionEnum[];
   entityFieldPermissions: IEntityFieldPermissionReadDto[];
   entityEventNotifications: IEntityEventNotificationReadDto[];
@@ -20,11 +20,11 @@ export interface IEntityPermissionReadDto {
 }
 
 export interface IEntityFieldPermissionReadDto {
-  field: IFieldReadDto;
+  field: IFieldReadDto | string;
   permissions: StaticPermissionEnum[];
 }
 
 export interface IEntityUserAssignmentPermissionsByRoleReadDto {
   canAssignToUserFromSameRole: boolean;
-  otherRoles: IRoleReadDto[];
+  otherRoles: (IRoleReadDto | string)[];
 }

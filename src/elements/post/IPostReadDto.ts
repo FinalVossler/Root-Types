@@ -1,5 +1,6 @@
 import { ITranslatedText } from "../../globalTypes/ITranslatedText";
 import { IFileReadDto } from "../file/IFileReadDto";
+import { IUserReadDto } from "../user/IUserReadDto";
 
 export enum PostVisibilityEnum {
   Private = "Private",
@@ -32,12 +33,12 @@ export interface IPostReadDto {
   _id: string;
   title?: ITranslatedText[];
   subTitle?: ITranslatedText[];
-  posterId: string;
+  poster: IUserReadDto | string;
   content?: ITranslatedText[];
-  files: IFileReadDto[];
+  files: (IFileReadDto | string)[];
   visibility: PostVisibilityEnum;
   design: PostDesignEnum;
-  children: IPostReadDto[];
+  children: (IPostReadDto | string)[];
   code?: string;
 
   createdAt: string;

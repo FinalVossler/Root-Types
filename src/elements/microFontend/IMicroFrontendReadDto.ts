@@ -4,7 +4,7 @@ export interface IMicroFrontendReadDto {
   _id: string;
   name: string;
   remoteEntry: string;
-  components: IMicroFrontendComponentReadDto[];
+  components: (IMicroFrontendComponentReadDto | string)[];
 
   createdAt: string;
   updatedAt: string;

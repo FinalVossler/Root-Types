@@ -6,21 +6,21 @@ import { IModelReadDto } from "../model/IModelReadDto";
 import { IUserReadDto } from "../user/IUserReadDto";
 
 export interface IEntityFieldValueReadDto {
-  field: IFieldReadDto;
+  field: IFieldReadDto | string;
   value: ITranslatedText[];
-  files: IFileReadDto[];
+  files: (IFileReadDto | string)[];
   tableValues?: IEntityTableFieldCaseValueReadDto[];
   yearTableValues?: IEntityYearTableFieldRowValuesReadDto[];
 }
 
 export interface IEntityTableFieldCaseValueReadDto {
-  column: IFieldTableElementReadDto;
-  row: IFieldTableElementReadDto;
+  column: IFieldTableElementReadDto | string;
+  row: IFieldTableElementReadDto | string;
   value: ITranslatedText[];
 }
 
 export interface IEntityYearTableFieldRowValuesReadDto {
-  row: IFieldTableElementReadDto;
+  row: IFieldTableElementReadDto | string;
   values: {
     year: number;
     value: ITranslatedText[];
@@ -29,9 +29,9 @@ export interface IEntityYearTableFieldRowValuesReadDto {
 
 export interface IEntityReadDto {
   _id: string;
-  model: IModelReadDto;
+  model: IModelReadDto | string;
   entityFieldValues: IEntityFieldValueReadDto[];
-  assignedUsers: IUserReadDto[];
+  assignedUsers: (IUserReadDto | string)[];
   customData?: Object;
 
   createdAt: string;

@@ -12,9 +12,9 @@ export interface IUserReadDto {
   firstName: string;
   lastName: string;
   email: string;
-  profilePicture?: IFileReadDto;
+  profilePicture?: IFileReadDto | string;
   superRole: SuperRoleEnum;
-  role?: IRoleReadDto;
+  role?: IRoleReadDto | string;
   hasMessagingEmailsActivated?: boolean;
 }
 

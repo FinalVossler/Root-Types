@@ -5,7 +5,7 @@ export interface IPageReadDto {
   _id: string;
   title: ITranslatedText[];
   slug: string;
-  posts: IPostReadDto[];
+  posts: (IPostReadDto | string)[];
   showInHeader: boolean;
   showInSideMenu: boolean;
 }

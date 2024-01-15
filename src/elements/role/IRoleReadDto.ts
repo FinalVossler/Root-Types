@@ -41,7 +41,7 @@ export interface IRoleReadDto {
   _id: string;
   name: ITranslatedText[];
   permissions: PermissionEnum[];
-  entityPermissions: IEntityPermissionReadDto[];
+  entityPermissions: (IEntityPermissionReadDto | string)[];
 
   createdAt: string;
   updatedAt: string;
