@@ -1,4 +1,4 @@
-import { IFileCreateCommand } from "../file/IFileCreateCommand";
+import { IFileCommand } from "../file/IFileCommand";
 import { PostDesignEnum, PostVisibilityEnum } from "./IPostReadDto";
 
 export interface IPostCreateCommand {
@@ -6,7 +6,7 @@ export interface IPostCreateCommand {
   subTitle?: string;
   posterId: string;
   content?: string;
-  files: IFileCreateCommand[];
+  files: IFileCommand[];
   visibility: PostVisibilityEnum;
   design: PostDesignEnum;
   children: string[];

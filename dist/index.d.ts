@@ -25,7 +25,7 @@ export * from "./elements/field/IFieldUpdateCommand";
 export * from "./elements/fieldTableElement/IFieldTableElementCreateCommand";
 export * from "./elements/fieldTableElement/IFieldTableElementReadDto";
 export * from "./elements/fieldTableElement/IFieldTableElementUpdateCommand";
-export * from "./elements/file/IFileCreateCommand";
+export * from "./elements/file/IFileCommand";
 export * from "./elements/file/IFileGetUnownedAndSelectedFilesCommand";
 export * from "./elements/file/IFileGetUserAndSelectedFilesCommand";
 export * from "./elements/file/IFileReadDto";

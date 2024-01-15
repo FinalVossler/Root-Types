@@ -1,4 +1,4 @@
-import { IFileCreateCommand } from "../file/IFileCreateCommand";
+import { IFileCommand } from "../file/IFileCommand";
 
 export interface IEntityCreateCommand {
   modelId: string;
@@ -10,7 +10,7 @@ export interface IEntityCreateCommand {
 export interface IEntityFieldValueCommand {
   fieldId: string;
   value: string;
-  files: IFileCreateCommand[];
+  files: IFileCommand[];
 
   tableValues: IEntityTableFieldCaseValueCommand[];
   yearTableValues: IEntityYearTableFieldRowValuesCommand[];

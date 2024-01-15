@@ -1,6 +1,6 @@
-import { IFileCreateCommand } from "../file/IFileCreateCommand";
+import { IFileCommand } from "../file/IFileCommand";
 
 export interface IUserUpdateProfilePictureCommand {
   userId: string;
-  picture: IFileCreateCommand;
+  picture: IFileCommand;
 }

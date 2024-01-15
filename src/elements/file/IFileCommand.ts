@@ -1,4 +1,4 @@
-export interface IFileCreateCommand {
+export interface IFileCommand {
   _id?: string;
   url: string;
   uuid: string;

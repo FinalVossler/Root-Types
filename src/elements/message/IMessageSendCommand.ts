@@ -1,8 +1,8 @@
-import { IFileCreateCommand } from "../file/IFileCreateCommand";
+import { IFileCommand } from "../file/IFileCommand";
 
 export interface IMessageSendCommand {
   from: string;
   to: string[];
   message: string;
-  files: IFileCreateCommand[];
+  files: IFileCommand[];
 }
