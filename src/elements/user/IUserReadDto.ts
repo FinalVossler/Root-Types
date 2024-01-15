@@ -18,7 +18,7 @@ export interface IUserReadDto {
   hasMessagingEmailsActivated?: boolean;
 }
 
-export interface IUserReadDtoWithLastReadMessageInConversation
+export interface IUserReadDtoWithLastReadMessageInConversationReadDto
   extends IUserReadDto {
   to: string[];
   lastReadMessageInConversation: IMessageReadDto | null;
