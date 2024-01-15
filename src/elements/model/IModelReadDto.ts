@@ -4,15 +4,15 @@ import { IFieldReadDto } from "../field/IFieldReadDto";
 import { IModelStateReadDto } from "../modelState/IModelStateReadDto";
 
 //#region model fields
-export interface IModelField {
+export interface IModelFieldReadDto {
   field: IFieldReadDto;
   required: boolean;
-  conditions?: IModelFieldCondition[];
+  conditions?: IModelFieldConditionReadDto[];
   states?: IModelStateReadDto[];
   mainField?: boolean;
 }
 
-export interface IModelFieldCondition {
+export interface IModelFieldConditionReadDto {
   field?: IFieldReadDto;
   conditionType: ModelFieldConditionTypeEnum;
   value?: number | string;
@@ -33,18 +33,7 @@ export enum ModelFieldConditionTypeEnum {
 export interface IModelReadDto {
   _id: string;
   name: ITranslatedText[];
-  modelFields: {
-    field: IFieldReadDto;
-    required: boolean;
-    conditions?: {
-      field?: IFieldReadDto;
-      conditionType: ModelFieldConditionTypeEnum;
-      value?: number | string;
-      modelState?: IModelStateReadDto;
-    }[];
-    states?: IModelStateReadDto[];
-    mainField?: boolean;
-  }[];
+  modelFields: IModelFieldReadDto[];
   modelEvents?: IEventReadDto[];
   states?: IModelStateReadDto[];
   subStates?: IModelStateReadDto[];
