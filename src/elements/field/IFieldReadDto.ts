@@ -27,8 +27,8 @@ export interface IFieldReadDto {
   fieldEvents: IEventReadDto[];
   tableOptions?: {
     name?: ITranslatedText[];
-    columns: IFieldTableElementReadDto[];
-    rows: IFieldTableElementReadDto[];
+    columns: (IFieldTableElementReadDto | string)[];
+    rows: (IFieldTableElementReadDto | string)[];
     yearTable: boolean;
   };
 
