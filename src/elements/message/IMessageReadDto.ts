@@ -30,7 +30,7 @@ export interface IPopulatedMessageReadDto {
   from: IUserReadDto;
   to: IUserReadDto[];
   message: string;
-  read: IUserReadDto[];
+  read: string[];
   readAt?: string[];
   files: IFileReadDto[];
   totalUnreadMessages?: number;
