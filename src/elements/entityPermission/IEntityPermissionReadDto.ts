@@ -14,15 +14,17 @@ export interface IEntityPermissionReadDto {
   _id: string;
   model: IModelReadDto;
   permissions: StaticPermissionEnum[];
-  entityFieldPermissions: IFieldPermissionReadDto[];
+  entityFieldPermissions: IEntityFieldPermissionReadDto[];
   entityEventNotifications: IEntityEventNotificationReadDto[];
-  entityUserAssignmentPermissionsByRole?: {
-    canAssignToUserFromSameRole: boolean;
-    otherRoles: IRoleReadDto[];
-  };
+  entityUserAssignmentPermissionsByRole?: IEntityUserAssignmentPermissionsByRoleReadDto;
 }
 
-export interface IFieldPermissionReadDto {
+export interface IEntityFieldPermissionReadDto {
   field: IFieldReadDto;
   permissions: StaticPermissionEnum[];
+}
+
+export interface IEntityUserAssignmentPermissionsByRoleReadDto {
+  canAssignToUserFromSameRole: boolean;
+  otherRoles: IRoleReadDto[];
 }
