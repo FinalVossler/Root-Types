@@ -19,7 +19,7 @@ export interface ITheme {
   boxShadow: string;
 }
 
-export interface IWebsiteConfiguration {
+export interface IWebsiteConfigurationReadDto {
   _id?: string;
   title?: string;
   description?: ITranslatedText[];
