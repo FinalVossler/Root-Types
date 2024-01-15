@@ -13,10 +13,10 @@ export enum ChatMessagesEnum {
 
 export interface IMessageReadDto {
   _id: string;
-  from: string | IUserReadDto;
-  to: string[] | IUserReadDto[];
+  from: string;
+  to: string[];
   message: string;
-  read: string[] | IUserReadDto[];
+  read: string[];
   readAt?: string[];
   files: IFileReadDto[];
   totalUnreadMessages?: number;
