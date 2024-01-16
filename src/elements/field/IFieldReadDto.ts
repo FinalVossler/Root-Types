@@ -24,7 +24,7 @@ export interface IFieldReadDto {
   type: FieldTypeEnum;
   canChooseFromExistingFiles?: boolean;
   options?: IFieldOptionReadDto[];
-  fieldEvents: IEventReadDto[];
+  fieldEvents: (IEventReadDto | string)[];
   tableOptions?: {
     name?: ITranslatedText[];
     columns: (IFieldTableElementReadDto | string)[];
