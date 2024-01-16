@@ -33,6 +33,6 @@ export interface IEventReadDto {
   requestHeaders: IEventRequestHeaderReadDto[];
 
   // Microfrontend redirection
-  microFrontend?: IMicroFrontendReadDto;
+  microFrontend?: IMicroFrontendReadDto | string;
   microFrontendComponentId?: string;
 }
