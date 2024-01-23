@@ -16,6 +16,7 @@ export interface IModelUpdateCommand {
     }[];
     modelStatesIds: string[];
     mainField: boolean;
+    stickInTable: boolean;
   }[];
   modelEvents: IEventCommand[];
   states: IModelStateUpdateCommand[];
