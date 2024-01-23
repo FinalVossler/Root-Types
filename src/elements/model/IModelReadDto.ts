@@ -10,6 +10,7 @@ export interface IModelFieldReadDto {
   conditions?: IModelFieldConditionReadDto[];
   states?: (IModelStateReadDto | string)[];
   mainField?: boolean;
+  stickInTable?: boolean;
 }
 
 export interface IModelFieldConditionReadDto {
