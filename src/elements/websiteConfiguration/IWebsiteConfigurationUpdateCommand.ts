@@ -16,4 +16,5 @@ export interface IWebsiteConfigurationUpdateCommand {
   logo1?: IFileCommand;
   logo2?: IFileCommand;
   language: string;
+  staticText: Object;
 }
