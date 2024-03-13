@@ -20,5 +20,10 @@ export interface IModelCreateCommand {
   modelEvents: IEventCommand[];
   states: IModelStateCreateCommand[];
   subStates: IModelStateCreateCommand[];
+
+  isForSale: boolean;
+  priceFieldId?: string;
+  quantityFieldId?: string;
+
   language: string;
 }

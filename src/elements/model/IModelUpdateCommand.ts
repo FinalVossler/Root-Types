@@ -21,5 +21,10 @@ export interface IModelUpdateCommand {
   modelEvents: IEventCommand[];
   states: IModelStateUpdateCommand[];
   subStates: IModelStateUpdateCommand[];
+
+  isForSale: boolean;
+  priceFieldId?: string;
+  quantityFieldId?: string;
+
   language: string;
 }
