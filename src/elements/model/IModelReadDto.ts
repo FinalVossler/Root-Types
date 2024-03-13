@@ -39,6 +39,10 @@ export interface IModelReadDto {
   states?: (IModelStateReadDto | string)[];
   subStates?: (IModelStateReadDto | string)[];
 
+  isForSale?: boolean;
+  quantityField?: IFieldReadDto | string;
+  priceField?: IFieldReadDto | string;
+
   createdAt: string;
   updatedAt: string;
 }
