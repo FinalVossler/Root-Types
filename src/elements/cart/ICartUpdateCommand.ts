@@ -1,7 +1,7 @@
 export interface ICartUpdateCommand {
   userId: string;
   products: {
-    quantiy: number;
+    quantity: number;
     productId: string;
   }[];
 }
