@@ -1,5 +1,5 @@
 interface ICartUpdateCommand {
-  cartId: string;
+  userId: string;
   products: {
     quantiy: number;
     productId: string;
