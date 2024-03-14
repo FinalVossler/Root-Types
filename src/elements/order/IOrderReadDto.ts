@@ -2,7 +2,7 @@ import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto
 import { IUserReadDto } from "../user/IUserReadDto";
 import OrderStatusEnum from "./OrderStatusEnum";
 
-export interface IOrder {
+export interface IOrderReadDto {
   user: IUserReadDto | string;
   date: string;
   total: number;
