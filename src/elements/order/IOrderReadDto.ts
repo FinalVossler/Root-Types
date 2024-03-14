@@ -20,7 +20,7 @@ export interface IOrderReadDto {
 
   products: {
     product: IEntityReadDto | string;
-    quantity: string;
+    quantity: number;
     price: number;
   }[];
 }
