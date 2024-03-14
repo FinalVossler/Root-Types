@@ -1,3 +1,4 @@
+import { IEntityReadDto } from "../entity/IEntityReadDto";
 import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto";
 import { IUserReadDto } from "../user/IUserReadDto";
 import OrderStatusEnum from "./OrderStatusEnum";
@@ -18,7 +19,7 @@ export interface IOrderReadDto {
   };
 
   products: {
-    productId: string;
+    product: IEntityReadDto | string;
     quantity: string;
     price: number;
   }[];
