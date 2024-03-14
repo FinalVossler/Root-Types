@@ -4,7 +4,7 @@ import { IUserReadDto } from "../user/IUserReadDto";
 export interface ICartReadDto {
   user: IUserReadDto | string;
   products: {
-    quantiy: number;
+    quantity: number;
     product: IEntityReadDto | string;
   }[];
 }
