@@ -6,7 +6,7 @@ interface ICartReadDto {
   products: {
     quantiy: number;
     product: IEntityReadDto | string;
-  };
+  }[];
 }
 
 export default ICartReadDto;

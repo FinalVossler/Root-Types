@@ -105,5 +105,5 @@ export * from "./elements/user/IUserUpdateProfilePictureCommand";
 export * from "./elements/websiteConfiguration/IWebsiteConfigurationReadDto";
 export * from "./elements/websiteConfiguration/IWebsiteConfigurationUpdateCommand";
 
-export * from "./elements/cart/ICartAddProductCommand";
+export * from "./elements/cart/ICartUpdateCommand";
 export * from "./elements/cart/ICartReadDto";
