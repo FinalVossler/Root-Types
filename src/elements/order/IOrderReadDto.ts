@@ -24,5 +24,5 @@ export interface IOrderReadDto {
     price: number;
   }[];
 
-  checkoutSessionId;
+  checkoutSessionId: string;
 }
