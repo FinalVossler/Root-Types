@@ -88,6 +88,7 @@ export * from "./elements/role/IRoleReadDto";
 export * from "./elements/role/IRolesGetCommand";
 export * from "./elements/role/IRolesSearchCommand";
 export * from "./elements/role/IRoleUpdateCommand";
+export * from "./elements/role/PermissionEnum";
 
 export * from "./elements/user/IChatGetContactsCommand";
 export * from "./elements/user/IUserChangePasswordCommand";

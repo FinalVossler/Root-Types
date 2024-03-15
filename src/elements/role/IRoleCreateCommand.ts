@@ -1,5 +1,5 @@
 import { IEntityPermissionCreateCommand } from "../entityPermission/IEntityPermissionCreateCommand";
-import { PermissionEnum } from "./IRoleReadDto";
+import { PermissionEnum } from "./PermissionEnum";
 
 export interface IRoleCreateCommand {
   name: string;
