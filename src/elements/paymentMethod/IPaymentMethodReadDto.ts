@@ -1,7 +1,7 @@
 import { ITranslatedText } from "../../globalTypes/ITranslatedText";
 
-export interface IShippingMethodReadDto {
+export interface IPaymentMethodReadDto {
   _id: string;
   name: ITranslatedText[];
-  price: number;
+  slug: string;
 }
