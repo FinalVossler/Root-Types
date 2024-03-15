@@ -119,4 +119,5 @@ export * from "./elements/shippingMethod/IShippingMethodCreateCommand";
 
 export * from "./elements/paymentMethod/IPaymentMethodReadDto";
 export * from "./elements/paymentMethod/IPaymentMethodCreateCommand";
+export * from "./elements/paymentMethod/IPaymentMethodUpdateCommand";
 export * from "./elements/paymentMethod/PaymentMethodEnum";
