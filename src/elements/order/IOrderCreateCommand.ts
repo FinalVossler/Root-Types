@@ -17,7 +17,7 @@ export interface IOrderCreateCommand {
 
   products: {
     productId: string;
-    quantity: string;
+    quantity: number;
     price: number;
   }[];
 }
