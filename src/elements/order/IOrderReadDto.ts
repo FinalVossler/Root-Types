@@ -4,6 +4,7 @@ import { IUserReadDto } from "../user/IUserReadDto";
 import OrderStatusEnum from "./OrderStatusEnum";
 
 export interface IOrderReadDto {
+  _id: string;
   user: IUserReadDto | string;
   date: string;
   total: number;
