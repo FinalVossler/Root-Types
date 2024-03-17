@@ -30,6 +30,7 @@ export interface IWebsiteConfigurationReadDto {
   withChat?: boolean;
   withRegistration?: boolean;
   withTaskManagement?: boolean;
+  withEcommerce?: boolean;
   theme: ITheme;
   tabIcon?: IFileReadDto | string;
   logo1?: IFileReadDto | string;
