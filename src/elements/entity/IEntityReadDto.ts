@@ -33,6 +33,7 @@ export interface IEntityReadDto {
   entityFieldValues: IEntityFieldValueReadDto[];
   assignedUsers: (IUserReadDto | string)[];
   customData?: Object;
+  owner?: IUserReadDto | string;
 
   createdAt: string;
   updatedAt: string;
