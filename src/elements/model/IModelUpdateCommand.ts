@@ -25,6 +25,7 @@ export interface IModelUpdateCommand {
   isForSale: boolean;
   priceFieldId?: string;
   quantityFieldId?: string;
+  imageFieldId?: string;
 
   language: string;
 }

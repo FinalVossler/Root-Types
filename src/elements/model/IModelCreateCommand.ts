@@ -24,6 +24,7 @@ export interface IModelCreateCommand {
   isForSale: boolean;
   priceFieldId?: string;
   quantityFieldId?: string;
+  imageFieldId?: string;
 
   language: string;
 }
