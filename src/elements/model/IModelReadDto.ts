@@ -42,6 +42,7 @@ export interface IModelReadDto {
   isForSale?: boolean;
   quantityField?: IFieldReadDto | string;
   priceField?: IFieldReadDto | string;
+  imageField?: IFieldReadDto | string;
 
   createdAt: string;
   updatedAt: string;
