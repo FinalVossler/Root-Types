@@ -42,4 +42,9 @@ export enum PermissionEnum {
   UpdateShippingMethod = "UpdateShippingMethod",
   ReadShippingMethod = "ReadShippingMethod",
   DeleteShippingMethod = "DeleteShippingMethod",
+
+  CreateAddress = "CreateAddress",
+  UpdateAddress = "UpdateAddress",
+  ReadAddress = "ReadAddress",
+  DeleteAddress = "DeleteAddress",
 }

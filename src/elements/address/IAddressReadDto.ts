@@ -1,4 +1,4 @@
-interface IAddressReadDto {
+export interface IAddressReadDto {
   _id: string;
   country: string;
   postalCode: string;
@@ -7,5 +7,3 @@ interface IAddressReadDto {
   region: string;
   city: string;
 }
-
-export default IAddressReadDto;

@@ -1,4 +1,4 @@
-interface IAddressUpdateCommand {
+export interface IAddressUpdateCommand {
   _id: string;
   country: string;
   postalCode: string;
@@ -7,5 +7,3 @@ interface IAddressUpdateCommand {
   region: string;
   city: string;
 }
-
-export default IAddressUpdateCommand;

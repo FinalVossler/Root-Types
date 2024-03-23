@@ -1,4 +1,4 @@
-interface IAddressCreateCommand {
+export interface IAddressCreateCommand {
   country: string;
   postalCode: string;
   addressLine1: string;
@@ -6,5 +6,3 @@ interface IAddressCreateCommand {
   region: string;
   city: string;
 }
-
-export default IAddressCreateCommand;

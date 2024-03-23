@@ -1,4 +1,4 @@
-import IAddressReadDto from "../address/IAddressReadDto";
+import { IAddressReadDto } from "../address/IAddressReadDto";
 import { IFileReadDto } from "../file/IFileReadDto";
 import { IMessageReadDto } from "../message/IMessageReadDto";
 import { IRoleReadDto } from "../role/IRoleReadDto";
