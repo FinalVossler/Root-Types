@@ -17,8 +17,6 @@ export interface IUserReadDto {
   superRole: SuperRoleEnum;
   role?: IRoleReadDto | string;
   hasMessagingEmailsActivated?: boolean;
-
-  addresses?: IAddressReadDto[];
 }
 
 export interface IUserReadDtoWithLastReadMessageInConversationReadDto

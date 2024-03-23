@@ -6,4 +6,6 @@ export interface IAddressUpdateCommand {
   addressLine2: string;
   region: string;
   city: string;
+
+  userId?: string;
 }
