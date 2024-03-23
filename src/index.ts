@@ -123,6 +123,6 @@ export * from "./elements/paymentMethod/IPaymentMethodCreateCommand";
 export * from "./elements/paymentMethod/IPaymentMethodUpdateCommand";
 export * from "./elements/paymentMethod/PaymentMethodEnum";
 
-export * from "./elements/address/IAddressReadDto";
 export * from "./elements/address/IAddressCreateCommand";
 export * from "./elements/address/IAddressUpdateCommand";
+export * from "./elements/address/IAddressReadDto";
