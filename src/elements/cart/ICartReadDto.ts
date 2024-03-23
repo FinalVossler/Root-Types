@@ -7,5 +7,6 @@ export interface ICartReadDto {
   products: {
     quantity: number;
     product: IEntityReadDto | string;
+    sided: boolean;
   }[];
 }

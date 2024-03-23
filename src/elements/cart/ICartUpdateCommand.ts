@@ -3,5 +3,6 @@ export interface ICartUpdateCommand {
   products: {
     quantity: number;
     productId: string;
+    sided: boolean;
   }[];
 }
