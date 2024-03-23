@@ -9,5 +9,5 @@ export interface IAddressReadDto {
   region: string;
   city: string;
 
-  user?: IUserReadDto;
+  user?: IUserReadDto | string;
 }
