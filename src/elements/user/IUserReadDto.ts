@@ -1,3 +1,4 @@
+import IAddressReadDto from "../address/IAddressReadDto";
 import { IFileReadDto } from "../file/IFileReadDto";
 import { IMessageReadDto } from "../message/IMessageReadDto";
 import { IRoleReadDto } from "../role/IRoleReadDto";
@@ -16,6 +17,8 @@ export interface IUserReadDto {
   superRole: SuperRoleEnum;
   role?: IRoleReadDto | string;
   hasMessagingEmailsActivated?: boolean;
+
+  addresses?: IAddressReadDto[];
 }
 
 export interface IUserReadDtoWithLastReadMessageInConversationReadDto
