@@ -10,4 +10,5 @@ export interface IAddressReadDto {
   city: string;
 
   user?: IUserReadDto | string;
+  isDefault?: boolean;
 }

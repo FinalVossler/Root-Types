@@ -7,4 +7,5 @@ export interface IAddressCreateCommand {
   city: string;
 
   userId?: string;
+  isDefault?: boolean;
 }
