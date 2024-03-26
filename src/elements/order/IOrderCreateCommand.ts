@@ -6,6 +6,7 @@ export interface IOrderCreateCommand {
   total: number;
   status: OrderStatusEnum;
   shippingMethodId: string;
+  paymentMethodId: string;
   shippingAddress: {
     country: string;
     postalCode: string;
