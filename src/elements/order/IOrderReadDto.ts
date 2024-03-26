@@ -28,4 +28,5 @@ export interface IOrderReadDto {
   }[];
 
   checkoutSessionId: string;
+  checkoutSessionUrl: string;
 }
