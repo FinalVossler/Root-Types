@@ -3,7 +3,6 @@ import OrderStatusEnum from "./OrderStatusEnum";
 export interface IOrderCreateCommand {
   userId: string;
   date: string;
-  total: number;
   status: OrderStatusEnum;
   shippingMethodId: string;
   paymentMethodId: string;
