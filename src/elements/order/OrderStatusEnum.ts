@@ -1,5 +1,6 @@
 export enum OrderStatusEnum {
   Pending = "Pending", // This is the initial status of an order when it's first placed by the customer but hasn't been processed yet by the seller.
+  Paid = "Paid",
   Processing = "Processing", // Once the seller begins to fulfill the order, it moves into the processing status. This typically involves activities such as picking and packing the items.
   InTransit = "InTransit", // Once the order has been packed and handed over to the shipping carrier, its status changes to "In Transit." This indicates that the package is on its way to the customer but hasn't been delivered yet.
   OutForDelivery = "OutForDelivery", // This status means that the package is currently with the delivery carrier and is out for delivery to the customer's address.
