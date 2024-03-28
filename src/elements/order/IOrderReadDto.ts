@@ -7,6 +7,7 @@ import OrderStatusEnum from "./OrderStatusEnum";
 export interface IOrderReadDto {
   _id: string;
   user: IUserReadDto | string;
+  number: string;
   date: string;
   total: number;
   status: OrderStatusEnum;
