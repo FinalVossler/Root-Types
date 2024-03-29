@@ -3,7 +3,7 @@ import { OrderModelAssociationPermissionEnum } from "./OrderModelAssociationPerm
 import { OrderModelAssociaztionLevelEnum } from "./OrderModelAssociaztionLevelEnum";
 
 export interface IOrderAssociatedModelReadDto {
-  model: IModelReadDto | string;
+  modelId: string;
   orderModelAssociationType: OrderModelAssociationPermissionEnum;
   orderModelAssociationLevel: OrderModelAssociaztionLevelEnum;
   IsList: boolean;
