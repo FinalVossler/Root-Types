@@ -1,4 +1,5 @@
 import { IEntityReadDto } from "../entity/IEntityReadDto";
+import { IModelOrderAssociationConfig } from "../model/IModelReadDto";
 import { IPaymentMethodReadDto } from "../paymentMethod/IPaymentMethodReadDto";
 import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto";
 import { IUserReadDto } from "../user/IUserReadDto";

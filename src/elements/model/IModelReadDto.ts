@@ -61,6 +61,7 @@ export interface IModelReadDto {
   priceField?: IFieldReadDto | string;
   imageField?: IFieldReadDto | string;
 
+  isForOrders?: boolean;
   orderAssociationConfig?: IModelOrderAssociationConfig;
 
   createdAt: string;
