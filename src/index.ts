@@ -66,6 +66,8 @@ export * from "./elements/modelState/IModelStateCreateCommand";
 export * from "./elements/modelState/IModelStateReadDto";
 export * from "./elements/modelState/IModelStateUpdateCommand";
 
+export * from "./elements/model/IModelOrderAssociationConfigCommand";
+
 export * from "./elements/notification/INotificationCreateCommand";
 export * from "./elements/notification/INotificationReadDto";
 export * from "./elements/notification/INotificationsGetCommand";
