@@ -1,3 +1,4 @@
+// IMPORTANT!!! => These need to be ordered. They are used in the frontend as a reference for status tracking in an ordered way
 export enum OrderStatusEnum {
   Pending = "Pending", // This is the initial status of an order when it's first placed by the customer but hasn't been processed yet by the seller.
   Paid = "Paid",

@@ -1,3 +1,4 @@
+// IMPORTANT!!! => These need to be ordered. They are used in the frontend as a reference for status tracking in an ordered way
 export enum OrderNegativeStatusEnum {
   Cancelleted = "Cancelled", // If the customer or seller cancels the order before it's fulfilled or delivered, the status may change to "Cancelled." This could happen for various reasons such as the customer changing their mind or the seller being unable to fulfill the order.
   OnHold = "OnHold", // Sometimes, orders may be put on hold for various reasons, such as awaiting additional information from the customer or experiencing inventory issues. The status "On Hold" indicates that the order is temporarily suspended until further action is taken.
