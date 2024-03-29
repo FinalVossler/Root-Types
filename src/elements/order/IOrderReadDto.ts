@@ -2,6 +2,7 @@ import { IEntityReadDto } from "../entity/IEntityReadDto";
 import { IPaymentMethodReadDto } from "../paymentMethod/IPaymentMethodReadDto";
 import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto";
 import { IUserReadDto } from "../user/IUserReadDto";
+import OrderNegativeStatusEnum from "./OrderNegativeStatusEnum";
 import OrderStatusEnum from "./OrderStatusEnum";
 
 export interface IOrderReadDto {
@@ -11,6 +12,7 @@ export interface IOrderReadDto {
   date: string;
   total: number;
   status: OrderStatusEnum;
+  negativeStatus?: OrderNegativeStatusEnum;
   shippingMethod: IShippingMethodReadDto | string;
   paymentMethod: IPaymentMethodReadDto | string;
   shippingAddress: {
