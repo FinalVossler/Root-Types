@@ -27,7 +27,7 @@ export interface IModelCreateCommand {
   quantityFieldId?: string;
   imageFieldId?: string;
 
-  orderAssociationConfig: IModelOrderAssociationConfigCommand;
+  orderAssociationConfig?: IModelOrderAssociationConfigCommand;
 
   language: string;
 }
