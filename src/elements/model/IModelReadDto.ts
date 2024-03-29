@@ -31,6 +31,23 @@ export enum ModelFieldConditionTypeEnum {
   IfYearTableThenNumberOfYearsInTheFutureIsEqualToValueOfField = "IfYearTableThenNumberOfYearsInTheFutureIsEqualToValueOfField",
 }
 
+// Association with orders
+export enum ModelOrderAssociationLevelEnum {
+  OrderLevel = "OrderLevel",
+  ProductLevel = "ProductLevel",
+}
+export enum ModelOrderAssociationPermissionEnum {
+  ForSeller = "ForSeller",
+  ForBuyer = "ForBuyer",
+  ForBothSellerAndBuyer = "ForBothSellerAndBuyer",
+}
+
+export interface IModelOrderAssociationConfig {
+  modelOrderAssociationPermission: ModelOrderAssociationPermissionEnum;
+  modelOrderAssociationLevel: ModelOrderAssociationLevelEnum;
+  isList: boolean;
+}
+
 export interface IModelReadDto {
   _id: string;
   name: ITranslatedText[];
@@ -43,6 +60,8 @@ export interface IModelReadDto {
   quantityField?: IFieldReadDto | string;
   priceField?: IFieldReadDto | string;
   imageField?: IFieldReadDto | string;
+
+  orderAssociationConfig?: IModelOrderAssociationConfig;
 
   createdAt: string;
   updatedAt: string;
