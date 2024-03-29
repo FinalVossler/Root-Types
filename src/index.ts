@@ -114,6 +114,9 @@ export * from "./elements/order/OrderStatusEnum";
 export * from "./elements/order/OrderNegativeStatusEnum";
 export * from "./elements/order/IOrderCreateCommand";
 export * from "./elements/order/IOrderCheckoutCommand";
+export * from "./elements/order/IOrderAssociatedModelReadDto";
+export * from "./elements/order/OrderModelAssociationPermissionEnum";
+export * from "./elements/order/OrderModelAssociaztionLevelEnum";
 
 export * from "./elements/shippingMethod/IShippingMethodReadDto";
 export * from "./elements/shippingMethod/IShippingMethodUpdateCommand";
