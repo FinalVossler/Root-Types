@@ -14,7 +14,6 @@ export interface IOrderReadDto {
   total: number;
   status: OrderStatusEnum;
   negativeStatus?: OrderNegativeStatusEnum;
-  shippingMethod: IShippingMethodReadDto | string;
   paymentMethod: IPaymentMethodReadDto | string;
   shippingAddress: {
     country: string;
@@ -29,6 +28,7 @@ export interface IOrderReadDto {
     product: IEntityReadDto | string;
     quantity: number;
     price: number;
+    shippingMethod: IShippingMethodReadDto | string;
   }[];
 
   checkoutSessionId: string;

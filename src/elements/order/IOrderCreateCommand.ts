@@ -1,10 +1,10 @@
+import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto";
 import OrderStatusEnum from "./OrderStatusEnum";
 
 export interface IOrderCreateCommand {
   userId: string;
   date: string;
   status: OrderStatusEnum;
-  shippingMethodId: string;
   paymentMethodId: string;
   shippingAddress: {
     country: string;
@@ -19,5 +19,6 @@ export interface IOrderCreateCommand {
     productId: string;
     quantity: number;
     price: number;
+    shippingMethod: IShippingMethodReadDto | string;
   }[];
 }
