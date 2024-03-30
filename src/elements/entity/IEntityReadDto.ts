@@ -37,6 +37,11 @@ export interface IEntityReadDto {
   owner?: IUserReadDto | string;
   availableShippingMethods?: (IShippingMethodReadDto | string)[];
 
+  orderAssociationConfig?: {
+    orderId: string;
+    productId?: string;
+  };
+
   createdAt: string;
   updatedAt: string;
 }

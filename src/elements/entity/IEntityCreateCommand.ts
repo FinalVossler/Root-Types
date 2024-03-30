@@ -5,6 +5,12 @@ export interface IEntityCreateCommand {
   entityFieldValues: IEntityFieldValueCommand[];
   assignedUsersIds: string[];
   availableShippingMethodsIds?: string[];
+
+  orderAssociationConfig?: {
+    orderId: string;
+    productId?: string;
+  };
+
   language: string;
 }
 
