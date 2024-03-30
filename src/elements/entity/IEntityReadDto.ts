@@ -4,6 +4,7 @@ import { IFieldReadDto } from "../field/IFieldReadDto";
 import { IFileReadDto } from "../file/IFileReadDto";
 import { IModelReadDto } from "../model/IModelReadDto";
 import { IUserReadDto } from "../user/IUserReadDto";
+import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto";
 
 export interface IEntityFieldValueReadDto {
   field: IFieldReadDto | string;
@@ -34,6 +35,7 @@ export interface IEntityReadDto {
   assignedUsers: (IUserReadDto | string)[];
   customData?: Object;
   owner?: IUserReadDto | string;
+  availableShippingMethods?: (IShippingMethodReadDto | string)[];
 
   createdAt: string;
   updatedAt: string;

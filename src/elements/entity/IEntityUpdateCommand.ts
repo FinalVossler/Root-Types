@@ -5,5 +5,6 @@ export interface IEntityUpdateCommand {
   modelId: string;
   entityFieldValues: IEntityFieldValueCommand[];
   assignedUsersIds: string[];
+  availableShippingMethodsIds?: string[];
   language: string;
 }

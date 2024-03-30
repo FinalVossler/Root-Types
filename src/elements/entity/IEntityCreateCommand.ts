@@ -4,6 +4,7 @@ export interface IEntityCreateCommand {
   modelId: string;
   entityFieldValues: IEntityFieldValueCommand[];
   assignedUsersIds: string[];
+  availableShippingMethodsIds?: string[];
   language: string;
 }
 
