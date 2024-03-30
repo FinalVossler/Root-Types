@@ -19,6 +19,6 @@ export interface IOrderCreateCommand {
     productId: string;
     quantity: number;
     price: number;
-    shippingMethod: IShippingMethodReadDto | string;
+    shippingMethodId: string;
   }[];
 }
