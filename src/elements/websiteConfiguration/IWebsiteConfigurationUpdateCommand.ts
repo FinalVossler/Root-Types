@@ -18,4 +18,5 @@ export interface IWebsiteConfigurationUpdateCommand {
   logo2?: IFileCommand;
   language: string;
   staticText: Object;
+  automaticallyAssignedRoleIdAtRegistration?: string;
 }

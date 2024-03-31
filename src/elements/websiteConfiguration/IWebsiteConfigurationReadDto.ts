@@ -1,5 +1,6 @@
 import { ITranslatedText } from "../../globalTypes/ITranslatedText";
 import { IFileReadDto } from "../file/IFileReadDto";
+import { IRoleReadDto } from "../role/IRoleReadDto";
 
 export interface ITheme {
   darkTextColor: string;
@@ -35,6 +36,7 @@ export interface IWebsiteConfigurationReadDto {
   tabIcon?: IFileReadDto | string;
   logo1?: IFileReadDto | string;
   logo2?: IFileReadDto | string;
+  automaticallyAssignedRoleAtRegistration?: IRoleReadDto | string;
 
   staticText?: any;
 }
