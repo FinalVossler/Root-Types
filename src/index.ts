@@ -21,6 +21,7 @@ export * from "./elements/entityEventNotification/IEntityEventNotificationUpdate
 export * from "./elements/entityPermission/IEntityPermissionCreateCommand";
 export * from "./elements/entityPermission/IEntityPermissionReadDto";
 export * from "./elements/entityPermission/IEntityPermissionUpdateCommand";
+export * from "./elements/entityPermission/EntityStaticPermissionEnum";
 
 export * from "./elements/event/IEventCommand";
 export * from "./elements/event/IEventReadDto";

@@ -1,13 +1,13 @@
 import { IEntityEventNotificationUpdateCommand } from "../entityEventNotification/IEntityEventNotificationUpdateCommand";
-import { StaticPermissionEnum } from "./IEntityPermissionReadDto";
+import { EntityStaticPermissionEnum } from "./EntityStaticPermissionEnum";
 
 export interface IEntityPermissionUpdateCommand {
   _id?: string;
   modelId: string;
-  permissions: StaticPermissionEnum[];
+  permissions: EntityStaticPermissionEnum[];
   entityFieldPermissions: {
     fieldId: string;
-    permissions: StaticPermissionEnum[];
+    permissions: EntityStaticPermissionEnum[];
   }[];
   entityEventNotifications: IEntityEventNotificationUpdateCommand[];
   entityUserAssignmentPermissionsByRole: {

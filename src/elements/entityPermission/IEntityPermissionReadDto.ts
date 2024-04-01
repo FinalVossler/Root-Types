@@ -2,18 +2,12 @@ import { IEntityEventNotificationReadDto } from "../entityEventNotification/IEnt
 import { IFieldReadDto } from "../field/IFieldReadDto";
 import { IModelReadDto } from "../model/IModelReadDto";
 import { IRoleReadDto } from "../role/IRoleReadDto";
-
-export enum StaticPermissionEnum {
-  Create = "Create",
-  Read = "Read",
-  Update = "Update",
-  Delete = "Delete",
-}
+import { EntityStaticPermissionEnum } from "./EntityStaticPermissionEnum";
 
 export interface IEntityPermissionReadDto {
   _id: string;
   model: IModelReadDto | string;
-  permissions: StaticPermissionEnum[];
+  permissions: EntityStaticPermissionEnum[];
   entityFieldPermissions: IEntityFieldPermissionReadDto[];
   entityEventNotifications: IEntityEventNotificationReadDto[];
   entityUserAssignmentPermissionsByRole?: IEntityUserAssignmentPermissionsByRoleReadDto;
@@ -21,7 +15,7 @@ export interface IEntityPermissionReadDto {
 
 export interface IEntityFieldPermissionReadDto {
   field: IFieldReadDto | string;
-  permissions: StaticPermissionEnum[];
+  permissions: EntityStaticPermissionEnum[];
 }
 
 export interface IEntityUserAssignmentPermissionsByRoleReadDto {
