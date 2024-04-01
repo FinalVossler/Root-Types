@@ -12,11 +12,17 @@ export enum PermissionEnum {
   ReadField = "ReadField",
   UpdateField = "UpdateField",
   DeleteField = "DeleteField",
+  ReadOwnField = "ReadOwnField",
+  UpdateOwnField = "UpdateOwnField",
+  DeleteOwnField = "DeleteOwnField",
 
   CreateModel = "CreateModel",
   ReadModel = "ReadModel",
   UpdateModel = "UpdateModel",
   DeleteModel = "DeleteModel",
+  ReadOwnModel = "ReadOwnModel",
+  UpdateOwnModel = "UpdateOwnModel",
+  DeleteOwnModel = "DeleteOwnModel",
 
   CreateUser = "CreateUser",
   ReadUser = "ReadUser",
@@ -28,23 +34,23 @@ export enum PermissionEnum {
   UpdateRole = "UpdateRole",
   DeleteRole = "DeleteRole",
 
-  ReadMicroFrontend = "ReadMicroFrontend",
   CreateMicroFrontend = "CreateMicroFrontend",
+  ReadMicroFrontend = "ReadMicroFrontend",
   UpdateMicroFrontend = "UpdateMicroFrontend",
   DeleteMicroFrontend = "DeleteMicroFrontend",
 
   CreatePaymentMethod = "CreatePaymentMethod",
-  UpdatePaymentMethod = "UpdatePaymentMethod",
   ReadPaymentMethod = "ReadPaymentMethod",
+  UpdatePaymentMethod = "UpdatePaymentMethod",
   DeletePaymentMethod = "DeletePaymentMethod",
 
   CreateShippingMethod = "CreateShippingMethod",
-  UpdateShippingMethod = "UpdateShippingMethod",
   ReadShippingMethod = "ReadShippingMethod",
+  UpdateShippingMethod = "UpdateShippingMethod",
   DeleteShippingMethod = "DeleteShippingMethod",
 
   CreateAddress = "CreateAddress",
-  UpdateAddress = "UpdateAddress",
   ReadAddress = "ReadAddress",
+  UpdateAddress = "UpdateAddress",
   DeleteAddress = "DeleteAddress",
 }

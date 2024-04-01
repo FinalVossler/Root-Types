@@ -1,6 +1,7 @@
 import { IEventReadDto } from "../event/IEventReadDto";
 import { IFieldTableElementReadDto } from "../fieldTableElement/IFieldTableElementReadDto";
 import { ITranslatedText } from "../../globalTypes/ITranslatedText";
+import { IUserReadDto } from "../user/IUserReadDto";
 
 export enum FieldTypeEnum {
   Number = "Number",
@@ -31,6 +32,7 @@ export interface IFieldReadDto {
     rows: (IFieldTableElementReadDto | string)[];
     yearTable: boolean;
   };
+  owner?: IUserReadDto | string;
 
   createdAt: string;
   updatedAt: string;

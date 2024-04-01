@@ -2,6 +2,7 @@ import { ITranslatedText } from "../../globalTypes/ITranslatedText";
 import { IEventReadDto } from "../event/IEventReadDto";
 import { IFieldReadDto } from "../field/IFieldReadDto";
 import { IModelStateReadDto } from "../modelState/IModelStateReadDto";
+import { IUserReadDto } from "../user/IUserReadDto";
 
 //#region model fields
 export interface IModelFieldReadDto {
@@ -63,6 +64,8 @@ export interface IModelReadDto {
 
   isForOrders?: boolean;
   orderAssociationConfig?: IModelOrderAssociationConfig;
+
+  owner?: IUserReadDto | string;
 
   createdAt: string;
   updatedAt: string;
