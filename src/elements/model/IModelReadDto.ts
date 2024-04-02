@@ -12,6 +12,7 @@ export interface IModelFieldReadDto {
   states?: (IModelStateReadDto | string)[];
   mainField?: boolean;
   stickInTable?: boolean;
+  isVariation?: boolean;
 }
 
 export interface IModelFieldConditionReadDto {
