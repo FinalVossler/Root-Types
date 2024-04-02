@@ -42,6 +42,8 @@ export interface IEntityReadDto {
     productId?: string;
   };
 
+  parentEntity?: IEntityReadDto | string;
+
   createdAt: string;
   updatedAt: string;
 }
