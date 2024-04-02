@@ -1,10 +1,7 @@
 import { IEventCommand } from "../event/IEventCommand";
 import { IModelStateUpdateCommand } from "../modelState/IModelStateUpdateCommand";
 import { IModelOrderAssociationConfigCommand } from "./IModelOrderAssociationConfigCommand";
-import {
-  IModelOrderAssociationConfig,
-  ModelFieldConditionTypeEnum,
-} from "./IModelReadDto";
+import { ModelFieldConditionTypeEnum } from "./IModelReadDto";
 
 export interface IModelUpdateCommand {
   _id: string;
@@ -21,6 +18,7 @@ export interface IModelUpdateCommand {
     modelStatesIds: string[];
     mainField: boolean;
     stickInTable: boolean;
+    isVariation: boolean;
   }[];
   modelEvents: IEventCommand[];
   states: IModelStateUpdateCommand[];

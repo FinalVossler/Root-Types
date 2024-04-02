@@ -17,6 +17,7 @@ export interface IModelCreateCommand {
     modelStatesIds: string[];
     mainField: boolean;
     stickInTable: boolean;
+    isVariation: boolean;
   }[];
   modelEvents: IEventCommand[];
   states: IModelStateCreateCommand[];
