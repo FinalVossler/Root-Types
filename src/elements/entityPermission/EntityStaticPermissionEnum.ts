@@ -4,6 +4,6 @@ export enum EntityStaticPermissionEnum {
   Update = "Update",
   Delete = "Delete",
   ReadOwn = "ReadOwn",
-  UpddateOwn = "UpdateOwn",
+  UpdateOwn = "UpdateOwn",
   DeleteOwn = "DeleteOwn",
 }
