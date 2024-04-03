@@ -2,7 +2,9 @@ import { ITranslatedText } from "../../globalTypes/ITranslatedText";
 
 export enum EntityEventNotificationTriggerEnum {
   OnCreate = "OnCreate",
-  OnAssigned = "OnAssigned",
+  OnUpdate = "OnUpdate",
+  OnAssigned = "OnAssigned", // This is for the first time the user is assigned to the entity
+  OnUpdateWhenAssigned = "OnUpdateWhenAssigned",
 }
 
 export interface IEntityEventNotificationReadDto {
