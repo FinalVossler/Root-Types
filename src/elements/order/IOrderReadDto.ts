@@ -3,8 +3,7 @@ import { IModelOrderAssociationConfig } from "../model/IModelReadDto";
 import { IPaymentMethodReadDto } from "../paymentMethod/IPaymentMethodReadDto";
 import { IShippingMethodReadDto } from "../shippingMethod/IShippingMethodReadDto";
 import { IUserReadDto } from "../user/IUserReadDto";
-import OrderNegativeStatusEnum from "./OrderNegativeStatusEnum";
-import OrderStatusEnum from "./OrderStatusEnum";
+import OrderPaymentStatusEnum from "./OrderPaymentStatusEnum";
 
 export interface IOrderReadDto {
   _id: string;
@@ -12,8 +11,7 @@ export interface IOrderReadDto {
   number: string;
   date: string;
   total: number;
-  status: OrderStatusEnum;
-  negativeStatus?: OrderNegativeStatusEnum;
+  paymentStatus: OrderPaymentStatusEnum;
   paymentMethod: IPaymentMethodReadDto | string;
   shippingAddress: {
     country: string;

@@ -113,8 +113,7 @@ export * from "./elements/cart/ICartUpdateCommand";
 export * from "./elements/cart/ICartReadDto";
 
 export * from "./elements/order/IOrderReadDto";
-export * from "./elements/order/OrderStatusEnum";
-export * from "./elements/order/OrderNegativeStatusEnum";
+export * from "./elements/order/OrderPaymentStatusEnum";
 export * from "./elements/order/IOrderCreateCommand";
 export * from "./elements/order/IOrderCheckoutCommand";
 
