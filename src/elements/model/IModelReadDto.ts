@@ -62,6 +62,7 @@ export interface IModelReadDto {
   quantityField?: IFieldReadDto | string;
   priceField?: IFieldReadDto | string;
   imageField?: IFieldReadDto | string;
+  showInSideMenu?: boolean;
 
   isForOrders?: boolean;
   orderAssociationConfig?: IModelOrderAssociationConfig;
