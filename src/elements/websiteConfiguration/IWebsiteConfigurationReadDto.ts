@@ -9,6 +9,7 @@ export interface ITheme {
   darkerPrimary: string;
   lighterPrimary: string;
   secondary: string;
+  disabledColor: string;
   errorColor: string;
   borderColor: string;
   formMaxWidth: string;
