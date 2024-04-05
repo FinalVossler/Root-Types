@@ -19,4 +19,5 @@ export interface IWebsiteConfigurationUpdateCommand {
   language: string;
   staticText: Object;
   automaticallyAssignedRoleIdAtRegistration?: string;
+  isSideMenuOpenByDefault: boolean;
 }

@@ -38,6 +38,7 @@ export interface IWebsiteConfigurationReadDto {
   logo1?: IFileReadDto | string;
   logo2?: IFileReadDto | string;
   automaticallyAssignedRoleAtRegistration?: IRoleReadDto | string;
+  isSideMenuOpenByDefault?: boolean;
 
   staticText?: any;
 }
