@@ -1,7 +1,11 @@
 import { IEventCommand } from "../event/IEventCommand";
 import { IModelStateCreateCommand } from "../modelState/IModelStateCreateCommand";
 import { IModelOrderAssociationConfigCommand } from "./IModelOrderAssociationConfigCommand";
-import { ModelFieldConditionTypeEnum } from "./IModelReadDto";
+import {
+  IModelSection,
+  ModelFieldConditionTypeEnum,
+  ModelViewTypeEnum,
+} from "./IModelReadDto";
 
 export interface IModelCreateCommand {
   name: string;
@@ -31,6 +35,8 @@ export interface IModelCreateCommand {
 
   isForOrders: boolean;
   orderAssociationConfig?: IModelOrderAssociationConfigCommand;
+  viewType: ModelViewTypeEnum;
+  sections: IModelSection[];
 
   language: string;
 }

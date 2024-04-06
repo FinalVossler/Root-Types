@@ -50,6 +50,23 @@ export interface IModelOrderAssociationConfig {
   isList: boolean;
 }
 
+export enum ModelViewTypeEnum {
+  SectionView = "SectionView",
+  LinearView = "LinearView",
+}
+
+export enum ModelSectionDirectionEnum {
+  Horizontal = "Horizontal",
+  Vertical = "Vertical",
+}
+
+export interface IModelSection {
+  direction: ModelSectionDirectionEnum;
+  children: IModelSection[];
+  uuid: string;
+  customData?: { fieldId: string };
+}
+
 export interface IModelReadDto {
   _id: string;
   name: ITranslatedText[];
@@ -68,6 +85,8 @@ export interface IModelReadDto {
   orderAssociationConfig?: IModelOrderAssociationConfig;
 
   owner?: IUserReadDto | string;
+  viewType?: ModelViewTypeEnum;
+  sections: IModelSection[];
 
   createdAt: string;
   updatedAt: string;
