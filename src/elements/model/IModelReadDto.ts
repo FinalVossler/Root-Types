@@ -60,11 +60,18 @@ export enum ModelSectionDirectionEnum {
   Vertical = "Vertical",
 }
 
+export enum SectionSpecialFieldEnum {
+  None = "None",
+  ShippingMethod = "ShippingMethod",
+  Quantity = "Quantity",
+  AddToCart = "AddToCart",
+}
+
 export interface IModelSection {
   direction: ModelSectionDirectionEnum;
   children: IModelSection[];
   uuid: string;
-  customData?: { fieldId: string };
+  customData?: { fieldId: string; specialField?: SectionSpecialFieldEnum };
 }
 
 export interface IModelReadDto {
